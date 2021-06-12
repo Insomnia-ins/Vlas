@@ -1,0 +1,67 @@
+<div class="start" style="background:#922df7; width: 500px; height: 400px; margin-left: 680px; margin-top: 250px; font-size: 36.5px;">
+	<h1>Тест от Власия</h1>
+	<div class="nachat" style="background: #dac6f7; width: 130px; height: 60px; margin-left: 184px; margin-top: 95px; font-size: 43px;">Начать</div>
+</div>
+
+<div class="question1" style="background: #c8c5fd; width: 500px; height: 547px; margin-left: 680px; font-size: 15px; display: none;">
+	<img src="1.jpg" style="width: 500px; height: 200px;">
+	<h1>Какая из этих песен вышла раньше?</h1>
+<div class="variant1" style="background: #be6cff; width: 500px ; height: 120px;">
+	<iframe frameborder="0"  width="100%" height="100" src="https://music.yandex.ru/iframe/#track/31195890/3780264"></iframe>
+    </div>
+<div class="variant2" style="background: #806eff; width: 500px ;height: 120px;">
+   <iframe frameborder="0" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/42553761/5623383"></iframe>
+   </div>
+<div class="variant3" style="background: #6ec6ff; width: 500px ;height: 120px;">
+	<iframe frameborder="0" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/58590996/8908568"></iframe>
+	</div>
+</div>
+
+<div class="question2" style="background:#c8c5fd; width: 500px; height: 578px; margin-left: 680px; font-size: 15px; display: none;">
+	<img src="2.jpg" style="width: 500px; height: 200px;">
+	<h1>Кто из Cмешариков является продвинутым пользователем интернета и компьютера?</h1>
+	<div class="variant1" style="background: #be6cff; width: 500px; height: 80px; font-size: 40px;">Пин</div>
+	<div class="variant2" style="background: #806eff; width: 500px; height: 80px; font-size: 40px;">Лосяш</div>
+	<div class="variant3" style="background: #6ec6ff; width: 500px; height: 80px; font-size: 40px;">Крош</div>
+</div>
+
+<div class="question3" style="background: #c8c5fd; width: 500px; height: 547px; margin-left: 680px; font-size: 15px; display: none;">
+	<iframe width="500" height="200" src="https://www.youtube.com/embed/CaryjOdYFa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h1>Когда был официальный выход brawl stars?</h1>
+	<div class="variant1" style="background: #be6cff; width: 500px; height: 80px; font-size: 40px;">27 июля 2017 года</div>
+	<div class="variant2" style="background: #806eff; width: 500px; height: 80px; font-size: 40px;">12 декабря 2018 года.</div>
+	<div class="variant3" style="background: #6ec6ff; width: 500px; height: 80px; font-size: 40px;">17 мая 2018 года</div>
+</div>
+
+<div class="question4" style="background:#c8c5fd; width: 500px; height: 610px; margin-left: 680px; font-size: 15px; display: none;">
+	<img src="5.jpg" style="width: 500px; height: 300px;">
+	<h1>Из какого фильма этот кадр?</h1>
+	<div class="variant1" style="background: #be6cff; width: 500px; height: 80px; font-size: 40px;">Побег из Шоушенка</div>
+	<div class="variant2" style="background: #806eff; width: 500px; height: 80px; font-size: 40px;">Форрест Гамп</div>
+	<div class="variant3" style="background: #6ec6ff; width: 500px; height: 80px; font-size: 40px;">Зелёная Миля</div>
+</div>
+
+<div>
+	<img src="3.jpg" class="ower" style="width: 500px; height: 400px; margin-left: 680px; margin-top: 300px ; display: none;">
+</div>
+
+<script type="text/javascript" src="https://dl.dropbox.com/s/2is2rmxt9120tiw/script.js"></script>
+<script>
+	find("start nachat").click("show","question1", "приступить к тесту");
+
+    find("question1 variant1").click("show","question2", "правильно");
+    find("question1 variant2").click("alert","неправильно");
+    find("question1 variant3").click("alert","неправильно");
+
+    find("question2 variant1").click("alert","неправильно");
+    find("question2 variant2").click("show","question3", "правильно");
+    find("question2 variant3").click("alert","неправильно");
+
+    find("question3 variant1").click("alert","неправильно");
+    find("question3 variant2").click("show", "question4","правильно");
+    find("question3 variant3").click("alert", "неправильно");
+
+    find("question4 variant1").click("alert", "неправильно");
+    find("question4 variant2").click("alert", "неправильно");
+    find("question4 variant3").click("show","ower", "правильно");
+</script>
